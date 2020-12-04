@@ -320,6 +320,7 @@ export class DownloadHttpClient {
           })
           .pipe(gunzip)
           .on('error', error => {
+            console.error(error)
             core.error(
               `An error occurred while attempting to decompress the response stream`
             )

@@ -196,7 +196,7 @@ describe('Download Tests', () => {
     const targetPath = path.join(root, 'FileD.txt')
 
     setupDownloadItemResponse(true, 200, true, fileContents, true)
-    setupThrowWhenReadingStream()
+    // setupThrowWhenReadingStream()
     const downloadHttpClient = new DownloadHttpClient()
 
     const items: DownloadItem[] = []
